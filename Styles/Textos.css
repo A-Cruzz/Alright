@@ -1,0 +1,26 @@
+.searchbar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 0px 0px 0px 0px;
+}
+
+.titulo-video{
+    display: inline-block;
+    width: 70%;
+    margin-left: 8px;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.nome-canal{
+    display: inline-block;
+    width: 70%;
+    margin-left: 52px;
+}
+
+
