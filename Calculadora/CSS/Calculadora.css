@@ -1,0 +1,46 @@
+.corpo{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.numeros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.layout-botoes{
+    height: 40px;
+    width: 40px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.layout-botoes:hover{
+    cursor: pointer;
+}
+
+.layout-operacoes{
+    height: 40px;
+    width: 40px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color:rgb(211, 211, 211);
+}
+
+.layout-operacoes:hover{
+    cursor: pointer;
+}
+
+.img-botao{
+    width: 60%;
+    vertical-align: middle;
+}

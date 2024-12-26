@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ppt</title>
+
+        <link rel="stylesheet" href="CSS/ppt.css">
+    </head>
+
+    <body>
+        
+        <p>little game time lets go</p>
+        <button onclick="game('Pedra')" class="hell-yeah" data-choice="Pedra"> Pedra</button>
+        <button onclick="game('Papel')" class="hell-yeah" data-choice="Papel"> Papel</button>
+        <button onclick="game('Tesoura')" class="hell-yeah" data-choice="Tesoura"> Tesoura</button>
+
+        <script>
+
+            function escolha(){
+                let escolhaCPU = Math.random();
+                let escolha;
+
+                if (escolhaCPU <= 1/3){
+                    escolha = 'Pedra';
+                } else if (escolhaCPU >= 2/3){
+                    escolha = 'Tesoura';
+                } else {
+                    escolha = 'Papel';
+                }
+
+                return escolha;
+            }
+
+            function game(escolhaJogador){
+
+                const escolhaCPU = escolha();
+                let resultado;
+
+                if (escolhaJogador === escolhaCPU) {
+                    resultado = `Empate! Ambos escolheram ${escolhaJogador}.`;
+                } else if (
+                    (escolhaJogador === 'Pedra' && escolhaCPU === 'Tesoura') ||
+                    (escolhaJogador === 'Papel' && escolhaCPU === 'Pedra') ||
+                    (escolhaJogador === 'Tesoura' && escolhaCPU === 'Papel')
+                ) {
+                    resultado = `Você venceu! ${escolhaJogador} ganha de ${escolhaCPU}.`;
+                } else {
+                    resultado = `Você perdeu! ${escolhaCPU} ganha de ${escolhaJogador}.`;
+                }
+                alert( `A maquina escolheu ${escolhaCPU}. ${resultado}`)
+            }
+
+            
+        </script>
+
+    </body>
+</html>
