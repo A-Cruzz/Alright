@@ -1,3 +1,40 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 .hell-yeah{
-    
+    background-color: transparent;
+    border-radius: 90px;
+    border: solid white;
+    padding: 36px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.icones{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.placares{
+    padding: 8px;
+    font-size: 15px;
+}
+
+.resultado{
+    font-size: 24px;
+    font-weight: bold;
 }

@@ -1,0 +1,14 @@
+.ytbutton{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.inscrito{
+    background-color: rgb(240, 240, 240);
+    color: black;
+}

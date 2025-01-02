@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ADHOC</title>
+
+        <link rel="stylesheet" href="CSS/adhoc.css">
+
+    </head>
+
+    <body>
+
+        <p>Youtube Subscribe Button</p>
+        <button class="ytbutton" onclick="ytsub()">Inscreva-se</button>
+
+        <script>
+
+            function ytsub(){
+             
+                const ytbt = document.querySelector('.ytbutton');
+
+                if (ytbt.innerText === 'Inscreva-se'){
+                    ytbt.innerText = 'Inscrito'
+                    ytbt.classList.add ('inscrito');
+                } else {
+                    ytbt.innerText = 'Inscreva-se'
+                    ytbt.classList.remove('inscrito')
+                }
+
+            }
+            
+
+
+        </script>
+    </body>
+
+</html>
